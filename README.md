@@ -11,7 +11,7 @@ This Python script allows you to **search, preview, and download recent research
 Install the required libraries using pip:
 
 ```bash
-pip install arxiv tqdm
+pip install -r requirements.txt
 ```
 
 ---
@@ -76,19 +76,6 @@ search_by_id = Search(id_list=["1804.07612"])
 - Searches for a **specific paper** using its arXiv ID.
 - Checks if the PDF already exists in the folder.
 - If not, downloads it.
-
----
-
-## 🧠 Notes
-
-- Make sure paper titles are valid filenames on your OS. Some special characters (like `:` or `/`) may cause issues.
-- You can improve filename handling with:
-
-```python
-import re
-safe_title = re.sub(r'[\/*?:"<>|]', "", r.title)
-```
-
 ---
 
 ## 📚 References
@@ -105,3 +92,5 @@ safe_title = re.sub(r'[\/*?:"<>|]', "", r.title)
 [INFO] Downloading paper: Generative Models for Language
 ...
 ```
+
+> This won't be showed but it is a backend thing
